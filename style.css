@@ -282,25 +282,32 @@ hr {
 
 @media all and (max-width: 900px) {
     
-   /*Ajuster la page en fonction de l'écran*/ 
-    #bloc_page {
+    /*Déplacer la partie de gauche dessous la partie de droite*/
+    #bloc-page {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*Ajuster la largeur des 2 parties en fonction de l'écran*/
+    #profil, #curriculum {
         width: auto;
     }
 
-  /*Redimentionner la photo*/
+  /*Redimentionner la photo et ajuster */
     #photo {
-        width: 50%;
-        height: 50%;
+        width: 40%;
+        height: 40%;
+        margin-top:5%
         }
 
-    /*Aligner verticalement les icones de la section 3 */
-    #hobbies {
-        width: 50%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        
+    /*Ajuster le bas de la page*/
+    #section3
+    {margin-bottom:5%;}
+
+    /*Ajuster la hauteur du header droit*/
+    #header-droit
+    {
+        height:120px;               
     }
 
     /*Aligner verticalement les sections de droite*/   
@@ -317,8 +324,7 @@ hr {
    span
    {
        font-size-adjust:0.6;
-
-   }
+    }
 
    /*Ajuster la taille de toutes les autres polices*/
     h1, h2, h3, h4, p 
