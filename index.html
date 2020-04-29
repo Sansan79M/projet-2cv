@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
     <title>Sandra MORIN CV</title>
@@ -9,7 +9,7 @@
 
     <!--viewport du navigateur mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" hfref="favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <!-- Lien des icônes -->
     <script src="https://kit.fontawesome.com/33bda3899b.js" crossorigin="anonymous"></script>
@@ -27,33 +27,35 @@
 </head>
     
 <body>
-    <!-------------------- CV : la page en entier ---------------------->
+    <!--~~~~~~~~~~~~~~~~~~~~~ CV : la page en entier ~~~~~~~~~~~~~~~-->
     <div id="bloc-page">
 
-        <!---------------------début de la partie gauche en jaune------------------>
+        <!--~~~~~~~~~~~~~~ début de la partie gauche en jaune ~~~~~~~~~~~~-->
         <div id="profil">
 
-            <!--------- header gauche ---------->
+            <!--~~~~~~~~~~~~~~ header gauche ~~~~~~~~~~~~-->
             <header id="header-gauche">
                 <img id="photo" src="sandra_morin.jpg" alt="photo" title="Sandra MORIN" />
             </header>
 
-            <!--------- SECTION 1 ---------->
+            <!--~~~~~~~~~~~~~~ SECTION 1 ~~~~~~~~~~~~~~~~-->
             <section id="section1">
-                <h1>CONTACT</h1>
+                <h2>CONTACT</h2>
                 <aside id="coordonnees">
-                    <p>Adresse<br /> 323 Rue du globe 00000 FRANCE</p>
-                    <p>Téléphone<br />06 06 06 06 06</p>
-                    <p>Email<br /><a href="mailto:monadresse.mail@email.com">monadresse.mail@email.com</a></p>
-                    <p>Site web <br /><a href="http://www.monsiteweb.com">www.monsiteweb.com</a></p>
-                    <p>Skype<br /><a href="https://www.skype.com/fr/">@mon_pseudo_utilisateur</a></p>
-                </aside>
+                    <p>Adresse<br /><a href="adress">323 Rue du globe 00000 FRANCE</a></p>
+                    <p>Téléphone<br /><a href="tel">06 06 06 06 06</a></p>
+                    <div id="liens-cliquables">
+                        <p>Email<br /><a href="mailto:monadresse.mail@email.com">monadresse.mail@email.com</a></p>
+                        <p>Site web <br /><a href="http://www.monsiteweb.com">www.monsiteweb.com</a></p>
+                        <p>Skype<br /><a href="https://www.skype.com/fr/">@mon_pseudo_utilisateur</a></p>
+                    </div>
+                    </aside>
             </section>
 
-            <!--------- SECTION 2 ---------->
+            <!--~~~~~~~~~~~~~~ SECTION 2 ~~~~~~~~~~~~~~~~-->
             <section id="section2">
-                <h1>À PROPOS DE MOI</h1>
-                <article id="propos">
+                <h2>À PROPOS DE MOI</h2>
+                <div id="propos">
                     <p>J’ai un parcours atypique, car j’aime multiplier les expériences et les connaissances dans différents domaines. Ces dernières années, j'ai travaillé dans une compagnie d'assurance en tant que Gestionnaire contrat.  Toutefois, j'ai participé à différents projets informatiques.</p>
 
                     <p>J’ai contribué à l’élaboration des expressions de besoins avec les MOA et MOE, sur des outils informatiques internes, mais aussi sur un outil extranet pour nos clients partenaires, dont j’ai effectué également des tests et recettes sur les environnements de production utilisateurs, en suivant des scénarios pré-établis ou en imaginant moi-même des scénarios suivant mon expérience et des cas rencontrés au quotidien.</p>
@@ -61,12 +63,12 @@
                     <p>Cela m’a fait réfléchir sur mon orientation professionnelle. D'autant que j'ai toujours eu une appétence pour l’informatique, d’une part la spécificité de mon baccalauréat et d’autre part en 2010, j'ai créé quelques pages web personnelles et un petit site e-commerce via prestashop.</p>
 
                     <p>De ce fait, j'ai entamé une formation de développeur Web, afin de proposer mes services auprès des TPE et PME qui souhaiteraient mettre en place une communication via un site internet.</p>
-                </article>
+                </div>
             </section>
 
-            <!--------- SECTION 3 ---------->
+            <!--~~~~~~~~~~~~~~ SECTION 3 ~~~~~~~~~~~~~~~~-->
             <section id="section3">
-                <h1>LOISIRS</h1>
+                <h2>LOISIRS</h2>
                 <div id="hobbies">
                     <i class="fas fa-music fa-lg" title="Musiques éclectiques"></i>
                     <i class="fas fa-paint-brush fa-lg" title="Peintures aquarelle et acrylique"></i>
@@ -75,18 +77,17 @@
             </section>
         </div>
 
-        <!------------------------Fin de la partie gauche ------------------------>
-        
-    <!---------------------------Début de la partie droite ----------------------------->
+        <!--~~~~~~~~~~~~~~ Fin de la partie gauche ~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~ Début de la partie droite ~~~~~~~~~~~~-->
         <div id="curriculum">
 
-            <!------------HEADER----------->
+            <!--~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~-->
             <header id="header-droit">
                 <h1><span id="prenom">SANDRA</span> <span id="nom">MORIN</span></h1>
                 <h2><span id="tiret">Dével</span>oppeuse web freelance</h2>
             </header>
 
-            <!---------SECTION 4---------->
+            <!--~~~~~~~~~~~~~~ SECTION 4 ~~~~~~~~~~~~~~~~-->
             <section id="section4">
 
                 <div class="alignement">
@@ -179,7 +180,7 @@
 
             </section>
 
-            <!--------- SECTION 5 ---------->
+            <!--~~~~~~~~~~~~~~ SECTION 5 ~~~~~~~~~~~~~~~~-->
             <section id="section5">
 
                 <div class="alignement">
@@ -260,7 +261,7 @@
                 </div>
             </section>
 
-            <!--------- SECTION 6 ---------->
+            <!--~~~~~~~~~~~~~~ SECTION 6 ~~~~~~~~~~~~~~~~-->
             <section id="section6">
 
                 <div class="alignement">
@@ -273,21 +274,21 @@
                     <aside id="recom1">
                         <h4 id="nom1">MME MACHINE ANNE</h4>
                         <p>Responsable de projet, Entreprise XXXX</p>
-                        <p>Télephone : 06.05.04.03.02</p>
+                        <p>Télephone : <a href="tel">06.05.04.03.02</a></p>
                         <p>Email : a-machine@email.com</p>
                     </aside>
                     <aside id="recom2">
                         <h4 id="nom2">MR TRUC Luc</h4>
                         <p>Responsable du service COM, Entreprise XXXX</p>
-                        <p>Télephone : 06.02.03.04.05</p>
+                        <p>Télephone : <a href="tel">06.02.03.04.05</a></p>
                         <p>Email : l-truc@email.com</p>
                     </aside>
                 </div>
             </section>
         </div>
-        <!------------------- Fin de la partie droite --------------------->
+        <!--~~~~~~~~~~~~~~ Fin de la partie droite ~~~~~~~~~~~~-->
     </div>
-    <!--------------------------Fin du CV--------------------------------->
+    <!--~~~~~~~~~~~~~~~~~~~~~ Fin du CV  ~~~~~~~~~~~~~~~-->
 
-    </body>    
+</body>    
 </html>

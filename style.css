@@ -12,6 +12,7 @@
 /********* Polices et taille d'écritures *******/
 body {
     font-family: 'Maven Pro', sans-serif;
+    margin:0;
 }
 #prenom, #nom {
     font-family: 'Poppins', sans-serif;
@@ -27,7 +28,7 @@ a /*suppression de la couleur et du soulignement des liens*/ {
     text-decoration: none;
     color: rgb(64, 64, 64);
 }
-a:hover /* couleur bleu au survole des liens*/ {
+#liens-cliquables a:hover /* couleur bleu au survole des liens*/ {
         color: blue;
     }
 
@@ -41,13 +42,12 @@ a:hover /* couleur bleu au survole des liens*/ {
     background-color: rgb(254, 202, 7);
     display: flex;
     flex-direction: column;
-    width: 27%;
-
+    width: 27%; 
 }
 
 /*header avec la photo*/
 #header-gauche:nth-child(1) {
-    flex: 1;
+    flex: 1.3;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -59,19 +59,21 @@ a:hover /* couleur bleu au survole des liens*/ {
     border: 4px solid rgb(218, 175, 18);
    }
 
-/*Tous les titres h1 de la partie gauche*/
-#profil h1 {
-  color: rgb(254, 202, 7);
-  text-align: center;
-  background-color: rgb(64, 64, 64);
-  padding: 9px;
-  }
+/*Tous les titres h2 de la partie gauche*/
+#profil h2 {
+    color: rgb(254, 202, 7);
+    text-align: center;
+    background-color: rgb(64, 64, 64);
+    padding: 9px;
+   
+}
 
  /*SECTION 1 : CONTACT*/
 #section1:nth-child(2)
 {
     display: flex;
     flex-direction: column;
+    flex:1;
 }
 #coordonnees {
     color: rgb(64, 64, 64);
@@ -97,18 +99,18 @@ a:hover /* couleur bleu au survole des liens*/ {
     flex-direction: column;
     flex:1;
 }
-#hobbies i.fas /*icones gris entourés dans la section 3*/
-{
+#hobbies i.fas /*icones gris entourés dans la section 3*/ {
     color: rgb(64, 64, 64);
     font-size: 2.5em;
     border-radius: 50%;
     border: 1.7px solid;
     padding: 0.4em 0.3em;
-}
+    }
 #hobbies {
-    display: inline-flex;
-    justify-content: space-evenly;
+    display:flex;
     padding-top: 20px;
+    justify-content: space-evenly;
+   
 }
 
 /*!!!!!!!!!!!!!!!!Fin partie gauche : profil !!!!!!!!!!!!!!!!!*/
@@ -170,7 +172,7 @@ a:hover /* couleur bleu au survole des liens*/ {
 .alignement
 {display: flex;}
 /*espace entre icones et titres de section*/ 
-h2 
+#curriculum h2 
 {
     margin-left: 30px;
 }
@@ -295,7 +297,7 @@ hr {
 
   /*Redimentionner la photo et ajuster */
     #photo {
-       
+        
         margin-top:5%
         }
 
@@ -314,10 +316,15 @@ hr {
         flex-direction: column;
         }
 
-    /*centrer la section 6*/
-    #recommandation {
-        padding-left: 55px;
+    /* Maintenir la taille des ronds jaune*/
+    #formations aside, #pro aside {
+        width: auto;
     }
+
+    /*centrer la section 6*/
+   #recommandation {
+            padding-left: 55px;
+        }
 
     /*Ajuster la taille de la police du header de droite*/
    span
